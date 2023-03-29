@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+// App.js
+
+import Login from  './pages/login'
+import NumberAndDateForm from './pages/3login'
+import YesNoCheckbox  from  './pages/2d'
+import RegistrationForm from  './pages/signin'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import ParentComponent from './component/Parentcomponent';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import './App.css';
 
+import Header from './component/Header';
+
 function App() {
-  return (
+
+
+  return(
+    
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <Login />
+</div>)
 }
 
 export default App;
